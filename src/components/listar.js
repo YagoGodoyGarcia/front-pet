@@ -13,7 +13,7 @@ class Listar extends React.Component {
     componentDidMount() {
 
         const listarData = async () => {
-            const response = await fetch('http://localhost:3001/pet').then(function (data) {
+            const response = await fetch('https://backend-pet.herokuapp.com/pet').then(function (data) {
                 return data.json();
             })
 
@@ -51,7 +51,7 @@ class Listar extends React.Component {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url: 'http://localhost:3001/pet/atualizar',
+                url: 'https://backend-pet.herokuapp.com/pet/atualizar',
                 body: dados,
                 json: true
             }, function (error, response, body) {
@@ -96,7 +96,7 @@ class Listar extends React.Component {
             headers: {
                 'Content-Type': 'application/json'
             },
-            url: 'http://localhost:3001/pet/remover',
+            url: 'https://backend-pet.herokuapp.com/pet/remover',
             body: dados,
             json: true
         }, function (error, response, body) {

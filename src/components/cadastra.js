@@ -30,7 +30,7 @@ class Cadastra extends React.Component {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url: 'http://localhost:3001/pet/registrar',
+                url: 'https://backend-pet.herokuapp.com/pet/registrar',
                 body: dados,
                 json: true
             }, function (error, response, body) {
